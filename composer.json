@@ -1,0 +1,26 @@
+{
+    "name": "xiphias/composer-package-creation-template",
+    "description": "This is the template for developing and testing creation of composer packages",
+    "autoload": {
+        "psr-4": {
+            "Xiphias\\ComposerPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Domagoj Križanec",
+            "email": "domagoj.krizanec@gmail.com"
+        },
+        {
+            "name": "Filip Gojković",
+            "email": "filip.gojkovic@xiphias.hr"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+
+    },
+    "minimum-stability": "dev"
+}
