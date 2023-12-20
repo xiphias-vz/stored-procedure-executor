@@ -3,7 +3,7 @@
     "description": "This is the template for developing and testing creation of composer packages",
     "autoload": {
         "psr-4": {
-            "Xiphias\\ComposerPackage\\": "src/"
+            "Xiphias\\": "src/Xiphias"
         }
     },
     "authors": [
