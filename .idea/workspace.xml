@@ -19,7 +19,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
   <component name="ProjectColorInfo">{
@@ -62,7 +61,7 @@
       <workItem from="1702917963070" duration="850000" />
       <workItem from="1702974306442" duration="6441000" />
       <workItem from="1703060966813" duration="750000" />
-      <workItem from="1703151384550" duration="1187000" />
+      <workItem from="1703151384550" duration="1527000" />
     </task>
     <task id="LOCAL-00001" summary="Added information to gitignore.">
       <option name="closed" value="true" />
