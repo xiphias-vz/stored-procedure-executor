@@ -6,23 +6,23 @@
             "Xiphias\\": "src/Xiphias"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "XiphiasTest\\": "tests/XiphiasTest/"
+        }
+    },
     "authors": [
-        {
-            "name": "Domagoj Križanec",
-            "email": "domagoj.krizanec@gmail.com"
-        },
         {
             "name": "Filip Gojković",
             "email": "filip.gojkovic@xiphias.hr"
         }
     ],
-    "require": {
-
-    },
+    "require": {},
     "require-dev": {
         "spryker/code-sniffer": "*",
         "spryker/container": "*",
         "spryker/testify": "*"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

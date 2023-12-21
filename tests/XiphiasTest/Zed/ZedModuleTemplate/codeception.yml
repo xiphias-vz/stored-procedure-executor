@@ -1,0 +1,20 @@
+namespace: PyzTest\Zed\ZedModuleTemplate
+
+paths:
+  tests: .
+  data: _data
+  support: _support
+  output: _output
+
+coverage:
+  enabled: true
+  remote: false
+  whitelist: { include: ['../../../../src/*'] }
+
+suites:
+  [name of application layer]:
+    path: [Name of folder in that application layer]
+    actor: [Name of class in _support directory]
+    modules:
+      enabled:
+        - Asserts
