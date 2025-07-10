@@ -1,6 +1,6 @@
 {
     "name": "xiphias/stored-procedure-executor",
-    "description": "This is the template for developing and testing creation of composer packages",
+    "description": "Integration of stored procedure executor",
     "autoload": {
         "psr-4": {
             "Xiphias\\": "src/Xiphias"
@@ -8,7 +8,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "XiphiasTest\\": "tests/XiphiasTest/"
+            "XiphiasTests\\": "tests/XiphiasTests/"
         }
     },
     "authors": [
@@ -17,7 +17,13 @@
             "email": "leon.vučemilo@xiphias.hr"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=8.0",
+        "spryker/session": "*",
+        "spryker/kernel": "^3.7.0",
+        "spryker/acl": "^3.13.0",
+        "spryker/translator": "^1.9.1"
+    },
     "require-dev": {
         "spryker/code-sniffer": "*",
         "spryker/container": "*",
