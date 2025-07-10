@@ -1,5 +1,5 @@
 {
-    "name": "xiphias/composer-package-creation-template",
+    "name": "xiphias/stored-procedure-executor",
     "description": "This is the template for developing and testing creation of composer packages",
     "autoload": {
         "psr-4": {
@@ -13,8 +13,8 @@
     },
     "authors": [
         {
-            "name": "Filip Gojković",
-            "email": "filip.gojkovic@xiphias.hr"
+            "name": "Leon Vučemilo",
+            "email": "leon.vučemilo@xiphias.hr"
         }
     ],
     "require": {},
