@@ -1,9 +1,5 @@
 <?php
 
-/**
- * This file is part of the Spryker Commerce OS.
- * For full license information, please view the LICENSE file that was distributed with this source code.
- */
 
 declare(strict_types=1);
 
@@ -18,7 +14,7 @@ use Xiphias\Zed\DatabaseTransaction\Persistence\TransactionInterface;
 class DatabaseTransactionBusinessFactory extends AbstractBusinessFactory
 {
     /**
-     * @return \Xiphias\Zed\TransactionInterface
+     * @return \Xiphias\Zed\DatabaseTransaction\Persistence\TransactionInterface
      */
     public function createTransaction(): TransactionInterface
     {
@@ -28,7 +24,7 @@ class DatabaseTransactionBusinessFactory extends AbstractBusinessFactory
     }
 
     /**
-     * @return \Xiphias\Zed\SqlStatementInterface
+     * @return \Xiphias\Zed\DatabaseTransaction\Business\Model\SqlStatementInterface
      */
     public function createSqlStatement(): SqlStatementInterface
     {

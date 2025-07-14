@@ -1,9 +1,5 @@
 <?php
 
-/**
- * This file is part of the Spryker Commerce OS.
- * For full license information, please view the LICENSE file that was distributed with this source code.
- */
 
 declare(strict_types=1);
 
@@ -41,7 +37,7 @@ class Transaction implements TransactionInterface
     protected const EXCEPTION_LEVEL = 'Level';
 
     /**
-     * @param \Xiphias\Zed\SqlStatementInterface $sqlStatement
+     * @param \Xiphias\Zed\DatabaseTransaction\Business\Model\SqlStatementInterface $sqlStatement
      */
     public function __construct(SqlStatementInterface $sqlStatement)
     {
@@ -53,7 +49,7 @@ class Transaction implements TransactionInterface
      *
      * @throws \Exception
      *
-     * @return array
+     * @return array<int, array<string, mixed>>
      */
     public function executeProcedureWithPayload(ProcedureConfigurationTransfer $procedureConfigurationTransfer): array
     {
@@ -108,7 +104,7 @@ class Transaction implements TransactionInterface
      * @param string $sqlStatement
      * @param \Propel\Runtime\Connection\ConnectionInterface $connection
      *
-     * @return array
+     * @return array<int, array<string, mixed>>
      */
     public function executeSqlCommand(string $sqlStatement, ConnectionInterface $connection): array
     {
