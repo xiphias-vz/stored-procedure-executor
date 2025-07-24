@@ -1,0 +1,5 @@
+actor: UnitTester
+suite_namespace: XiphiasTest\Unit
+modules:
+    # enable helpers as array
+    enabled: []

@@ -1,14 +1,16 @@
-namespace: SprykerTest
-include:
-  - tests/XiphiasTest/Zed/ZedModuleTemplate
+namespace: XiphiasTest
 paths:
-  tests: tests/
-  output: tests/_output/
-  data: tests/_data/
-  support: tests/_support/
-  envs: tests/_envs/
+  tests: tests/XiphiasTest
+  output: tests/XiphiasTest/_output/
+  data: tests/XiphiasTest/_data/
+  support: tests/XiphiasTest/_support/
+  envs: tests/XiphiasTest/_envs/
 settings:
   suite_class: \PHPUnit\Framework\TestSuite
   colors: true
   memory_limit: 1024M
   log: true
+coverage:
+  enabled: true
+  include:
+          - src/*
