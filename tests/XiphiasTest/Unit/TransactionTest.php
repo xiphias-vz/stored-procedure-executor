@@ -47,6 +47,9 @@ class TransactionTest extends Unit
         $result = $transaction->executeProcedureWithPayload($procedureConfig);
 
         $this->assertEquals([['some' => 'data']], $result);
+        $this->assertNotEquals([['some' => 'other']], $result);
+        $this->assertTrue(count($result) > 0);
+        $this->assertContains('some', array_keys($result[0]));
     }
 
     public function testExecuteProcedureWithPayloadThrowsExceptionOnErrorResult(): void
@@ -155,6 +158,9 @@ class TransactionTest extends Unit
         $result = $sqlStatement->build($procedureConfigMock);
 
         $this->assertEquals("call  my_procedure(1,'param2',3.14)", $result);
+        $this->assertNotEquals("call  procedure(0,'wrong',0)", $result);
+        $this->assertStringContainsString('my_procedure', $result);
+        $this->assertGreaterThan(0, strlen($result));
     }
 
     public function testBuildReturnsSqlWithoutParameters(): void
@@ -169,6 +175,9 @@ class TransactionTest extends Unit
         $result = $sqlStatement->build($procedureConfigMock);
 
         $this->assertEquals("call  my_procedure()", $result);
+        $this->assertNotEquals("call  other_procedure()", $result);
+        $this->assertNotEmpty($result);
+        $this->assertStringContainsString('my_procedure', $result);
     }
 
 }
